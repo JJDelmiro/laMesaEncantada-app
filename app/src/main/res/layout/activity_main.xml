@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFADD"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="260dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/chapeu" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/fugaz_one"
+        android:text="La Mesa Encantada"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Total da Conta"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextCouvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTotalBill"
+        android:layout_marginTop="8dp"
+        android:hint="Couvert Artístico"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextServiceTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCouvert"
+        android:layout_marginTop="8dp"
+        android:hint="Taxa de Serviço (%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextServiceTax"
+        android:layout_marginTop="8dp"
+        android:hint="Número de Pessoas"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumberOfPeople"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFDE83"
+        android:text="Calcular"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>
